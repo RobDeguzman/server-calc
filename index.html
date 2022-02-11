@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Calculator</title>
+  <script src="script.js"></script>
+  <link rel="stylesheet" href="cover.css">
+</head>
+<body>
+<main>
+  <form id="calculator">
+    <p>Rob</p>
+    <input type="text" id="window" readonly>
+    <div>
+      <input type="button" value="7" id="seven" onclick="downloadValue(document.getElementById('seven').value)">
+      <input type="button" value="8" id="eight" onclick="downloadValue(document.getElementById('eight').value)">
+      <input type="button" value="9" id="nine" onclick="downloadValue(document.getElementById('nine').value)">
+      <input type="button" value="+" id="plus" onclick="downloadValue(document.getElementById('plus').value)">
+    </div>
+    <div>
+      <input type="button" value="4" id="four" onclick="downloadValue(document.getElementById('four').value)">
+      <input type="button" value="5" id="five" onclick="downloadValue(document.getElementById('five').value)">
+      <input type="button" value="6" id="six" onclick="downloadValue(document.getElementById('six').value)">
+      <input type="button" value="-" id="minus" onclick="downloadValue(document.getElementById('minus').value)">
+    </div>
+    <div>
+      <input type="button" value="1" id="one" onclick="downloadValue(document.getElementById('one').value)">
+      <input type="button" value="2" id="two" onclick="downloadValue(document.getElementById('two').value)">
+      <input type="button" value="3" id="three" onclick="downloadValue(document.getElementById('three').value)">
+      <input type="button" value="*" id="multi" onclick="downloadValue(document.getElementById('multi').value)">
+    </div>
+    <div>
+      <input type="button" value="0" id="zero" onclick="downloadValue(document.getElementById('zero').value)">
+      <input type="button" value="." id="decimal" onclick="downloadValue(document.getElementById('decimal').value)">
+      <input type="button" value="/" id="divi" onclick="downloadValue(document.getElementById('divi').value)">
+    </div>
+    <div class="bottom">
+      <button type="button" id="clear" onclick="clearInput(document.getElementById('clear').value)">Clear</button>
+      <input type="button" value="=" id="equal" onclick="resultCalc()">
+    </div>
+  </form>
+</main>
+<script src="calculator.js"></script>
+</body>
+</html>
